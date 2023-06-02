@@ -30,7 +30,7 @@ PRIMARY KEY(FK_usuario_c, FK_usuario_e)
 );
 
 CREATE TABLE veterinario(
-crmv INT,
+crmv VARCHAR(50),
 FK_usuario_e VARCHAR(50),
 FOREIGN KEY (FK_usuario_e) REFERENCES empreendedor(usuario),
 PRIMARY KEY(FK_usuario_e)
@@ -38,7 +38,7 @@ PRIMARY KEY(FK_usuario_e)
 
 CREATE TABLE hotel(
 vagas INT,
-cnpj INT,
+cnpj VARCHAR(50),
 tiposDeQuarto VARCHAR(50),
 FK_usuario_e VARCHAR(50),
 FOREIGN KEY (FK_usuario_e) REFERENCES empreendedor(usuario),
@@ -47,7 +47,7 @@ PRIMARY KEY(FK_usuario_e)
 
 CREATE TABLE baba(
 valor DOUBLE,
-cpf INT,
+cpf VARCHAR(50),
 FK_usuario_e VARCHAR(50),
 FOREIGN KEY (FK_usuario_e) REFERENCES empreendedor(usuario),
 PRIMARY KEY(FK_usuario_e)
@@ -55,112 +55,129 @@ PRIMARY KEY(FK_usuario_e)
 
 CREATE TABLE petShop(
 vagas INT,
-cnpj INT,
+cnpj VARCHAR(50),
 FK_usuario_e VARCHAR(50),
 FOREIGN KEY (FK_usuario_e) REFERENCES empreendedor(usuario),
 PRIMARY KEY(FK_usuario_e)
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario) 
+cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa"
+"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312'
 );
 
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario) 
+cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Debora Marchado", "marchado@outlook.com", "Rua do sal", "@Debor4"
+"Debora Marchado", "marchado@outlook.com", "Rua do sal", "@Debor4", '(82) 2597-2891'
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario) 
+cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Eduarda Camelo", "dudinha@gmail.com", "Rua da santa", "@dudalind"
+"Eduarda Camelo", "dudinha@gmail.com", "Rua da santa", "@dudalind", '(82) 2597-2834'
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario) 
+cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1"
+"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891'
 );
  
  INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Carlos Almeida", "suport.guccicao@gmail.com", "Rua da baguet", "@GucciCao"
+"Carlos Almeida", "suport.guccicao@gmail.com", "Rua da baguet", "@GucciCao", '(82) 2597-7897'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Gloria Maria", "suport.balancePet@gmail.com", "Rua da Palmeira", "@balancePet"
+"Gloria Maria", "suport.balancePet@gmail.com", "Rua da Palmeira", "@balancePet", '(82) 9093-2891'
 );
 
  INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Pedro Camiro", "suport.vetpet@gmail.com", "Rua da Maria", "@vetPet"
+"Pedro Camiro", "suport.vetpet@gmail.com", "Rua da Maria", "@vetPet", '(82) 9087-8675'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Patricia Amaral", "AmaralProd@gmail.com", "Rua da Nanci", "@AmaraPet"
+"Patricia Amaral", "AmaralProd@gmail.com", "Rua da Nanci", "@AmaraPet", '(82) 3428-6731'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Rodrigo Jonathan", "hotel.DogSleep@gmail.com", "Rua da pet", "@RodrigoHoteis"
+"Rodrigo Jonathan", "hotel.DogSleep@gmail.com", "Rua da pet", "@RodrigoHoteis", '(82) 8928-6731'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Amanda Silva", "mandinha.baba@gmail.com", "Rua do Sol", "@AmandinhaAbaba"
+"Amanda Silva", "mandinha.baba@gmail.com", "Rua do Sol", "@AmandinhaAbaba", '(82) 3428-7521'
 );
 
  INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"João Silva", "joao.adestrador@gmail.com", "Rua do Sol", "@joao.silva"
+"João Silva", "joao.adestrador@gmail.com", "Rua do Sol", "@joao.silva", '(82) 6098-6731'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Ellen Jainany", "ellen.vet@gmail.com", "Rua ds Manga", "@ellen_vet"
+"Ellen Jainany", "ellen.vet@gmail.com", "Rua ds Manga", "@ellen_vet", '(82) 3428-0600'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Antônio Cezar", "cezarveterinario@gmail.com", "Rua ds Maçã", "@cezar_vet"
+"Antônio Cezar", "cezarveterinario@gmail.com", "Rua ds Maçã", "@cezar_vet", '(82) 3428-6598'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Cleuza Venturini", "ventu.hotel@gmail.com", "Rua da Maçã", "@ventu.hotel"
+"Cleuza Venturini", "ventu.hotel@gmail.com", "Rua da Maçã", "@ventu.hotel", '(82) 9998-6731'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"David Lima", "dhslima@gmail.com", "Pajuçara", "@dhs.hotel"
+"David Lima", "dhslima@gmail.com", "Pajuçara", "@dhs.hotel", '(82) 6688-6731'
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
+empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Luana Verçosa", "vercosa.shop@gmail.com", "Pajuçara", "@vercosaShop"
+"Luana Verçosa", "vercosa.shop@gmail.com", "Pajuçara", "@vercosaShop", '(82) 3428-6777'
 );
 
+INSERT INTO 
+veterinario (crmv , FK_usuario_e) VALUES 
+('12937',  "@cezar_vet"),
+('36555', "@ellen_vet"),
+('08547',  "@vetPet")
 
- INSERT INTO 
-empreendedor(nome, email, endereco, usuario) 
-VALUES (
-"GucciCao", "suport.guccicao@gmail.com", "Rua da baguet", "@GucciCao"
-);
+INSERT INTO 
+baba (valor, cpf, FK_usuario_e) VALUES 
+(100.00, 12937243002, "@AmaraPet"),
+(85.00, 36559576027, "@AmandinhaAbaba"),
+(200.00, 08547028064, "@joao.silva")
+
+INSERT INTO 
+ hotel (vagas, cnpj, tiposDeQuarto , FK_usuario_e) VALUES 
+(100, '25355323000129','Básico, Intermediario, Premium',  "@RodrigoHoteis"),
+(250, '48008922000171', "Bronze, Prata, Ouro","@ventu.hotel"),
+(35, '67946428000100',"Premium",  "@dhs.hotel");
+
+INSERT INTO 
+ petshop (vagas, cnpj,  FK_usuario_e) VALUES 
+(70, '44662444000168', "@vercosaShop"),
+(290, '16626669000123', "@balancePet"),
+(120, '37658938000103', "@GucciCao");
