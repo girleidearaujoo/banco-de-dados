@@ -1,5 +1,5 @@
-CREATE DATABASE chatpet;
-USE chatpet;
+create database chatpet;
+use chatpet;
 
 CREATE TABLE cliente(
 nome VARCHAR(50),
@@ -162,13 +162,13 @@ INSERT INTO
 veterinario (crmv , FK_usuario_e) VALUES 
 ('12937',  "@cezar_vet"),
 ('36555', "@ellen_vet"),
-('08547',  "@vetPet")
+('08547',  "@vetPet");
 
 INSERT INTO 
 baba (valor, cpf, FK_usuario_e) VALUES 
 (100.00, 12937243002, "@AmaraPet"),
 (85.00, 36559576027, "@AmandinhaAbaba"),
-(200.00, 08547028064, "@joao.silva")
+(200.00, 08547028064, "@joao.silva");
 
 INSERT INTO 
  hotel (vagas, cnpj, tiposDeQuarto , FK_usuario_e) VALUES 
