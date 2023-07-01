@@ -113,7 +113,7 @@ VALUES (
 INSERT INTO 
 empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Rodrigo Jonathan", "hotel.DogSleep@gmail.com", "Rua da pet", "@RodrigoHoteis", '(82) 8928-6731'
+"Rodrigo Jonathan", "hotel.DogSleep@gmail.com", "Rua do pet", "@RodrigoHoteis", '(82) 8928-6731'
 );
 
 INSERT INTO 
@@ -131,13 +131,13 @@ VALUES (
 INSERT INTO 
 empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Ellen Jainany", "ellen.vet@gmail.com", "Rua ds Manga", "@ellen_vet", '(82) 3428-0600'
+"Ellen Jainany", "ellen.vet@gmail.com", "Rua da Manga", "@ellen_vet", '(82) 3428-0600'
 );
 
 INSERT INTO 
 empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Antônio Cezar", "cezarveterinario@gmail.com", "Rua ds Maçã", "@cezar_vet", '(82) 3428-6598'
+"Antônio Cezar", "cezarveterinario@gmail.com", "Rua da Maçã", "@cezar_vet", '(82) 3428-6598'
 );
 
 INSERT INTO 
