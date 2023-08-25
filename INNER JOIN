@@ -1,17 +1,30 @@
 # Quais os estudantes do curso integrado em informática?
-
 SELECT a.nome AS NomeAluno, c.nome AS NomeCurso 
 FROM Aluno a INNER JOIN curso c ON a.FK_id_curso = c.id
 WHERE c.nome = "Integrado em informática";  
 
 # Quais diciplinas o estudante David está cursando?
-
 SELECT d.nome FROM disciplina d JOIN alunodisciplina ad 
 ON d.id = ad.FK_id_disciplina JOIN aluno a
 ON ad.FK_matricula = a.matricula WHERE a.nome = "David";
 
 # Quais as notas, matricula e as disciplinas do aluno David? 
-
 SELECT d.nome, ad.nota, a.matricula FROM disciplina d JOIN alunodisciplina ad 
 ON d.id = ad.FK_id_disciplina JOIN aluno a
 ON ad.FK_matricula = a.matricula WHERE a.nome = "David";
+
+# Quais cursos o prof João participa?
+SELECT DISTINCT c.nome FROM curso c JOIN cursodisciplina cd ON c.id = cd.FK_id_curso 
+JOIN disclipina d ON cd.fk_id_disciplina = d.id 
+JOIN professor p ON d.FK_id_professor = p.siape WHERE p.nome = "João";
+
+# Quais disciplinas os estudantes David e Henrique cursam juntos?
+SELECT d.nome FROM disciplina d JOIN alunodisciplina ad1 ON d.id + ad1.FK_id_disciplina 
+JOIN aluno a1 ON ad1.FK_matricula = a1.matricula 
+JOIN alunodisciplina ad2 ON d.id = ad2.FK_id_disciplina 
+JOIN aluno a2 ON ad2.FK_matricula = a2.matricula WHERE a1.nome = "David" AND a2.nome = "Henrique";
+
+# Quais as disciplinas que o prof. João leciona que David está matriculado?
+SELECT d.nome FROM disciplina d JOIN professor p ON d.FK_id_professor = p.siape 
+JOIN alunodisciplina ad ON ad.FK_id_disciplina = d.id 
+JOIN aluno a ON a.matricula = ad.FK_matricula WHERE p.nome = "João" AND a.nome = "David";
