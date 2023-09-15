@@ -61,6 +61,18 @@ FOREIGN KEY (FK_usuario_e) REFERENCES empreendedor(usuario),
 PRIMARY KEY(FK_usuario_e)
 );
 
+CREATE TABLE publicacao(
+foto VARCHAR(1000),
+likes INT,
+legenda VARCHAR(1000),
+comentarios VARCHAR(1000),
+FK_usuario_c INT,
+FK_usuario_e INT,
+FOREIGN KEY(FK_usuario_c) REFERENCES cliente(usuario),
+FOREIGN KEY(FK_usuario_e) REFERENCES empreendedor(usuario),
+PRIMARY KEY(FK_usuario_e, FK_usuario_c)
+);
+
 INSERT INTO 
 cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
