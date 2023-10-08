@@ -193,3 +193,8 @@ INSERT INTO
 (70, '44662444000168', "@vercosaShop"),
 (290, '16626669000123', "@balancePet"),
 (120, '37658938000103', "@GucciCao");
+
+INSERT INTO transacao (valor, tipo, FK_usuario_c, FK_usuario_e) VALUES 
+(300, 'pix','@Enzo1', "@vercosaShop"),
+(80, 'debito','@Enzo1', "@GucciCao"),
+(44, 'pix','@Debor4',  "@GucciCao");
