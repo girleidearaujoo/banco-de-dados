@@ -40,6 +40,9 @@ CREATE TABLE hotel(
 vagas INT,
 cnpj VARCHAR(50),
 tiposDeQuarto VARCHAR(50),
+horario_inicio INT,
+horario_termino INT,
+avaliacao INT,
 FK_usuario_e VARCHAR(50),
 FOREIGN KEY (FK_usuario_e) REFERENCES empreendedor(usuario),
 PRIMARY KEY(FK_usuario_e)
@@ -183,13 +186,13 @@ baba (valor, cpf, FK_usuario_e) VALUES
 (200.00, 08547028064, "@joao.silva");
 
 INSERT INTO 
- hotel (vagas, cnpj, tiposDeQuarto , FK_usuario_e) VALUES 
-(100, '25355323000129','Básico, Intermediario, Premium',  "@RodrigoHoteis"),
-(250, '48008922000171', "Bronze, Prata, Ouro","@ventu.hotel"),
-(35, '67946428000100',"Premium",  "@dhs.hotel");
+hotel (vagas, cnpj, tiposDeQuarto, horario_inicio, horario_termino, avaliacao,  FK_usuario_e) VALUES 
+(100, '25355323000129','Básico, Intermediario, Premium', 8, 22, 5  "@RodrigoHoteis"),
+(250, '48008922000171', "Bronze, Prata, Ouro", 10, 18, 4, "@ventu.hotel"),
+(35, '67946428000100',"Premium", 8, 24, 5,  "@dhs.hotel");
 
 INSERT INTO 
- petshop (vagas, cnpj,  FK_usuario_e) VALUES 
+petshop (vagas, cnpj,  FK_usuario_e) VALUES 
 (70, '44662444000168', "@vercosaShop"),
 (290, '16626669000123', "@balancePet"),
 (120, '37658938000103', "@GucciCao");
