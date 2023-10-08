@@ -1,5 +1,6 @@
 # Liste todos os hotéis que funcionam até às 22h
 
+
 # Lista o top 3 hotéis melhores avaliados
 
 # Liste o histórico de usos de um determinado usuário
