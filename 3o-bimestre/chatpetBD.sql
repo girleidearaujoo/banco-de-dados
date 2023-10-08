@@ -80,26 +80,26 @@ PRIMARY KEY(FK_usuario_e, FK_usuario_c)
 INSERT INTO 
 cliente(nome, email, endereco, usuario, telefone, historico) 
 VALUES (
-"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312', "PetShop GucciCão e PetShop BalancePet"
+"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312', "PetShop GucciCão e PetShop BalancePet",
 );
 
 
 INSERT INTO 
 cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Debora Marchado", "marchado@outlook.com", "Rua do sal", "@Debor4", '(82) 2597-2891'
+"Debora Marchado", "marchado@outlook.com", "Rua do sal", "@Debor4", '(82) 2597-2891', "PetShop GucciCão e Babá Amanda Silva"
 );
 
 INSERT INTO 
 cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Eduarda Camelo", "dudinha@gmail.com", "Rua da santa", "@dudalind", '(82) 2597-2834'
+"Eduarda Camelo", "dudinha@gmail.com", "Rua da santa", "@dudalind", '(82) 2597-2834', "Hotel Rodrigo Jonathan e PetShop BalancePet"
 );
 
 INSERT INTO 
 cliente(nome, email, endereco, usuario, telefone) 
 VALUES (
-"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891'
+"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891', "PetShop Luana Verçosa e Babá Patricia Amaral"
 );
  
  INSERT INTO 
