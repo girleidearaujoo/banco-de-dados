@@ -2,6 +2,7 @@
 SELECT * FROM hotel WHERE horario_termino = 22;
 
 # Lista o top 3 hotéis melhores avaliados
+SELECT * FROM hotel ORDER BY avaliacao DESC LIMIT 3;
 
 # Liste o histórico de usos de um determinado usuário
 
