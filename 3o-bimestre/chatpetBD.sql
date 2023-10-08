@@ -7,6 +7,7 @@ email VARCHAR(50),
 endereco VARCHAR(50),
 usuario VARCHAR(50),
 telefone VARCHAR(50),
+historico VARCHAR(100),
 PRIMARY KEY (usuario)
 );
 
@@ -77,9 +78,9 @@ PRIMARY KEY(FK_usuario_e, FK_usuario_c)
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario, telefone) 
+cliente(nome, email, endereco, usuario, telefone, historico) 
 VALUES (
-"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312'
+"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312', "PetShop GucciCão e PetShop BalancePet"
 );
 
 
