@@ -1,5 +1,5 @@
 # Liste todos os hotéis que funcionam até às 22h
-
+SELECT * FROM hotel WHERE horario_termino = 22;
 
 # Lista o top 3 hotéis melhores avaliados
 
