@@ -137,7 +137,7 @@ VALUES (
 "Amanda Silva", "mandinha.baba@gmail.com", "Rua do Sol", "@AmandinhaAbaba", '(82) 3428-7521'
 );
 
- INSERT INTO 
+INSERT INTO 
 empreendedor(nome, email, endereco, usuario, telefone) 
 VALUES (
 "João Silva", "joao.adestrador@gmail.com", "Rua do Sol", "@joao.silva", '(82) 6098-6731'
@@ -190,6 +190,8 @@ hotel (vagas, cnpj, tiposDeQuarto, horario_inicio, horario_termino, avaliacao,  
 (100, '25355323000129','Básico, Intermediario, Premium', 8, 22, 5  "@RodrigoHoteis"),
 (250, '48008922000171', "Bronze, Prata, Ouro", 10, 18, 4, "@ventu.hotel"),
 (35, '67946428000100',"Premium", 8, 24, 5,  "@dhs.hotel");
+(47, '14547896040100',"Simples", 7, 20, 3,  "@ejsv.hotel");
+
 
 INSERT INTO 
 petshop (vagas, cnpj,  FK_usuario_e) VALUES 
