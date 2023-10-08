@@ -15,3 +15,9 @@ SELECT * FROM publicacao;
 SELECT * FROM cliente;
 # Info das empresas
 SELECT * FROM empreendedor;
+# Criando publicacoes
+INSERT INTO 
+publicaco(foto, legenda, FK_usuario_c)
+VALUES (
+"foto.jpg", "indo ali", "@Enzo1"
+);
