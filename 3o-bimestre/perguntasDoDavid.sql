@@ -5,7 +5,7 @@ SELECT * FROM hotel WHERE horario_termino = 22;
 SELECT * FROM hotel ORDER BY avaliacao DESC LIMIT 3;
 
 # Liste o histórico de usos de um determinado usuário
-SELECT historico FROM cliente WHERE FK_usuario_c = 'Debor4'
+SELECT historico FROM cliente WHERE FK_usuario_c = 'dudalind'
   
 # Quais petshops um determinado animal de um determinado usuários ele já foi
 
