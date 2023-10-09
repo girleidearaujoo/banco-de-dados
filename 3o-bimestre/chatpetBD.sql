@@ -8,6 +8,7 @@ endereco VARCHAR(50),
 usuario VARCHAR(50),
 telefone VARCHAR(50),
 historico VARCHAR(100),
+senha INT,
 PRIMARY KEY (usuario)
 );
 
@@ -17,6 +18,7 @@ email VARCHAR(50),
 endereco VARCHAR(50),
 usuario VARCHAR(50),
 telefone VARCHAR(50),
+senha INT,
 PRIMARY KEY (usuario)
 );
 
@@ -78,100 +80,100 @@ PRIMARY KEY(FK_usuario_e, FK_usuario_c)
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario, telefone, historico) 
+cliente(nome, email, endereco, usuario, telefone, historico, senha) 
 VALUES (
-"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312', "PetShop GucciCão e PetShop BalancePet",
+"Cleitin Barbosa", "barbosadelas@outlook.com", "Rua da Laranja", "@cleitoBarbosa", '(82) 2368-2312', "PetShop GucciCão e PetShop BalancePet", 847898
 );
 
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario, telefone) 
+cliente(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Debora Marchado", "marchado@outlook.com", "Rua do sal", "@Debor4", '(82) 2597-2891', "PetShop GucciCão e Babá Amanda Silva"
+"Debora Marchado", "marchado@outlook.com", "Rua do sal", "@Debor4", '(82) 2597-2891', "PetShop GucciCão e Babá Amanda Silva", 123456
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario, telefone) 
+cliente(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Eduarda Camelo", "dudinha@gmail.com", "Rua da santa", "@dudalind", '(82) 2597-2834', "Hotel Rodrigo Jonathan e PetShop BalancePet"
+"Eduarda Camelo", "dudinha@gmail.com", "Rua da santa", "@dudalind", '(82) 2597-2834', "Hotel Rodrigo Jonathan e PetShop BalancePet", 748596
 );
 
 INSERT INTO 
-cliente(nome, email, endereco, usuario, telefone) 
+cliente(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891', "PetShop Luana Verçosa e Babá Patricia Amaral"
+"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891', "PetShop Luana Verçosa e Babá Patricia Amaral", 857412
 );
  
- INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+INSERT INTO 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Carlos Almeida", "suport.guccicao@gmail.com", "Rua da baguet", "@GucciCao", '(82) 2597-7897'
+"Carlos Almeida", "suport.guccicao@gmail.com", "Rua da baguet", "@GucciCao", '(82) 2597-7897', 966718
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Gloria Maria", "suport.balancePet@gmail.com", "Rua da Palmeira", "@balancePet", '(82) 9093-2891'
-);
-
- INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
-VALUES (
-"Pedro Camiro", "suport.vetpet@gmail.com", "Rua da Maria", "@vetPet", '(82) 9087-8675'
+"Gloria Maria", "suport.balancePet@gmail.com", "Rua da Palmeira", "@balancePet", '(82) 9093-2891', 145269
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Patricia Amaral", "AmaralProd@gmail.com", "Rua da Nanci", "@AmaraPet", '(82) 3428-6731'
+"Pedro Camiro", "suport.vetpet@gmail.com", "Rua da Maria", "@vetPet", '(82) 9087-8675', 465213
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Rodrigo Jonathan", "hotel.DogSleep@gmail.com", "Rua do pet", "@RodrigoHoteis", '(82) 8928-6731'
+"Patricia Amaral", "AmaralProd@gmail.com", "Rua da Nanci", "@AmaraPet", '(82) 3428-6731', 456912
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Amanda Silva", "mandinha.baba@gmail.com", "Rua do Sol", "@AmandinhaAbaba", '(82) 3428-7521'
+"Rodrigo Jonathan", "hotel.DogSleep@gmail.com", "Rua do pet", "@RodrigoHoteis", '(82) 8928-6731', 134506
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"João Silva", "joao.adestrador@gmail.com", "Rua do Sol", "@joao.silva", '(82) 6098-6731'
+"Amanda Silva", "mandinha.baba@gmail.com", "Rua do Sol", "@AmandinhaAbaba", '(82) 3428-7521', 120566
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Ellen Jainany", "ellen.vet@gmail.com", "Rua da Manga", "@ellen_vet", '(82) 3428-0600'
+"João Silva", "joao.adestrador@gmail.com", "Rua do Sol", "@joao.silva", '(82) 6098-6731', 061205
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Antônio Cezar", "cezarveterinario@gmail.com", "Rua da Maçã", "@cezar_vet", '(82) 3428-6598'
+"Ellen Jainany", "ellen.vet@gmail.com", "Rua da Manga", "@ellen_vet", '(82) 3428-0600', 051206
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Cleuza Venturini", "ventu.hotel@gmail.com", "Rua da Maçã", "@ventu.hotel", '(82) 9998-6731'
+"Antônio Cezar", "cezarveterinario@gmail.com", "Rua da Maçã", "@cezar_vet", '(82) 3428-6598', 342864
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"David Lima", "dhslima@gmail.com", "Pajuçara", "@dhs.hotel", '(82) 6688-6731'
+"Cleuza Venturini", "ventu.hotel@gmail.com", "Rua da Maçã", "@ventu.hotel", '(82) 9998-6731', 999867
 );
 
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Luana Verçosa", "vercosa.shop@gmail.com", "Pajuçara", "@vercosaShop", '(82) 3428-6777'
+"David Lima", "dhslima@gmail.com", "Pajuçara", "@dhs.hotel", '(82) 6688-6731', 668867
+);
+
+INSERT INTO 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
+VALUES (
+"Luana Verçosa", "vercosa.shop@gmail.com", "Pajuçara", "@vercosaShop", '(82) 3428-6777', 412987
 );
 
 INSERT INTO 
