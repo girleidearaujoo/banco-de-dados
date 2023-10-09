@@ -101,7 +101,7 @@ VALUES (
 INSERT INTO 
 cliente(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891', "PetShop Luana Verçosa e Babá Patricia Amaral", 857412
+"Enzo Duarte", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891', "PetShop Luana Verçosa e Babá Patricia Amaral", 857412
 );
  
 INSERT INTO 
