@@ -1,13 +1,13 @@
 # Cadastros
 INSERT INTO 
-cliente(nome, email, endereco, usuario, telefone) 
+cliente(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891'
+"Enzo Duarate", "enzoduarte@gmail.com", "Rua da baguet", "@Enzo1", '(82) 9997-2891', 857412 
 );
 INSERT INTO 
-empreendedor(nome, email, endereco, usuario, telefone) 
+empreendedor(nome, email, endereco, usuario, telefone, senha) 
 VALUES (
-"Pedro Camiro", "suport.vetpet@gmail.com", "Rua da Maria", "@vetPet", '(82) 9087-8675'
+"Pedro Camiro", "suport.vetpet@gmail.com", "Rua da Maria", "@vetPet", '(82) 9087-8675', 465213
 );
 
 # Publicacoes
