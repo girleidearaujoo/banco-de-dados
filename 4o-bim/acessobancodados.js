@@ -80,6 +80,18 @@ connection.query(sql, id, (err, results) => {
   }
   console.log('Tabela alterada com sucesso:', results.insertId);
 });
+// INSERT TELEFONES
+sql = 'INSERT INTO telefones (FK_id, telefone) VALUES (?, ?)'
+let tel = [1, '(11)99678-9087']
+connection.query(sql, tel, (err, results) => {
+  if (err) {
+    console.error('Erro ao inserir dados:', err);
+    return;
+  }
+  console.log('Dados inseridos com sucesso:', results.insertId);
+});
+
+
 connection.end((err) => {
     if (err) {
         console.error("Erro ao fechar a conexão com o banco de dados:", err);
